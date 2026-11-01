@@ -4,7 +4,7 @@ A web app for a UK utility's day-ahead trading desk. For every delivery day it s
 
 Data: Elexon BMRS [`FUELHH`](https://bmrs.elexon.co.uk/api-documentation/endpoint/datasets/FUELHH/stream) (actual generation, fuel type `WIND`) and [`WINDFOR`](https://bmrs.elexon.co.uk/api-documentation/endpoint/datasets/WINDFOR/stream) (wind forecasts). Scope: purchase decisions made in **January 2026**, i.e. delivery days 2 Jan to 1 Feb 2026.
 
-**Live app:** _<add Vercel / Heroku URL here>_
+**Live app:** https://qvx7tmr.vercel.app
 **Demo video:** _<add unlisted YouTube URL here>_
 
 ---
