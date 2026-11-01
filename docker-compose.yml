@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # auto = live Elexon API with snapshot fallback; use "snapshot" to run offline
+      GRIDBICK_DATA_SOURCE: ${GRIDBICK_DATA_SOURCE:-auto}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
